@@ -33,6 +33,17 @@
       thumb: 'assets/img/thumb-2048.svg',
       rating: 4.6,
       addedAt: '2025-10-24'
+    },
+    {
+      id: 'tic-tac-toe',
+      title: 'Jogo da Velha',
+      slug: 'tic-tac-toe',
+      description: 'Clássico jogo de estratégia para 2 jogadores. Forme 3 em linha!',
+      tags: ['estratégia', 'clássico', '2-jogadores'],
+      url: 'games/tic-tac-toe/',
+      thumb: 'assets/img/thumb-tictactoe.svg',
+      rating: 4.5,
+      addedAt: '2025-10-26'
     }
   ];
 

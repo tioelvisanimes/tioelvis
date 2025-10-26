@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo da Velha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="../../index.html">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-title">Arcadia</span>
+      </a>
+      <nav class="nav">
+        <a href="../../index.html">Início</a>
+        <a href="../../games.html">Jogos</a>
+        <a class="active" href="../tic-tac-toe/">Jogo da Velha</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" data-action="toggle-theme">☀︎</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section game-wrap">
+    <section class="panel">
+      <div class="stats">
+        <div class="badge">Jogador X: <span id="score-x">0</span></div>
+        <div class="badge">Empates: <span id="score-draw">0</span></div>
+        <div class="badge">Jogador O: <span id="score-o">0</span></div>
+      </div>
+      <div id="game-board" style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 400px; margin: 20px auto;"></div>
+      <div id="status" style="text-align:center; font-size:1.2rem; margin:16px 0; color:var(--primary)"></div>
+      <div class="controls" style="margin-top:10px; justify-content:center;">
+        <button class="btn primary" id="btn-restart">Reiniciar</button>
+        <button class="btn" id="btn-reset-scores">Zerar Placar</button>
+      </div>
+    </section>
+    <aside class="panel">
+      <h3>Jogo da Velha</h3>
+      <p>Clássico jogo de estratégia para 2 jogadores. Forme uma linha de 3 símbolos iguais para vencer!</p>
+      <ul>
+        <li>Clique nas células para jogar</li>
+        <li>Jogador X começa</li>
+        <li>Vence quem fizer 3 em linha primeiro</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Divirta-se!</div>
+  </footer>
+
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/games/tictactoe.js"></script>
+</body>
+</html>
