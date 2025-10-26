@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Block Break Deluxe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="../../index.html">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-title">Arcadia</span>
+      </a>
+      <nav class="nav">
+        <a href="../../index.html">Início</a>
+        <a href="../../games.html">Jogos</a>
+        <a class="active" href="../block-break-deluxe/">Block Break Deluxe</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" data-action="toggle-theme">☀︎</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section game-wrap">
+    <section class="panel">
+      <div class="stats">
+        <div class="badge">Pontos: <span id="score">0</span></div>
+        <div class="badge">Vidas: <span id="lives">3</span></div>
+        <div class="badge">Nível: <span id="level">1</span></div>
+      </div>
+      <div class="canvas-box">
+        <canvas id="game" width="960" height="600"></canvas>
+      </div>
+      <div class="controls" style="margin-top:10px">
+        <button class="btn primary" id="btn-start">Iniciar</button>
+        <button class="btn" id="btn-pause">Pausar</button>
+        <button class="btn" id="btn-restart">Reiniciar</button>
+      </div>
+    </section>
+    <aside class="panel">
+      <h3>Block Break Deluxe</h3>
+      <p>Quebre blocos, colete power-ups e avance os níveis. Controle a raquete com as setas ou o mouse.</p>
+      <ul>
+        <li>Setas ou mouse: mover</li>
+        <li>Barra de espaço: lançar a bola</li>
+        <li>P: pausar</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Divirta-se!</div>
+  </footer>
+
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/games/blockbreak.js"></script>
+</body>
+</html>

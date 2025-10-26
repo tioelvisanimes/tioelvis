@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de Jogos | Arcadia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-title">Arcadia</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a class="active" href="games.html">Jogos</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" data-action="toggle-theme" title="Alternar tema">☀︎</button>
+        <button class="icon-btn" title="Favoritos"><span data-fav-count>0</span>★</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="searchbar">
+      <input id="search" type="search" placeholder="Buscar por nome ou tag..." autofocus>
+    </div>
+    <div id="catalog-grid" class="grid" style="margin-top:14px"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>Arcadia — Todos os jogos em um só lugar</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

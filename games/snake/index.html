@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake Neo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="../../index.html">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-title">Arcadia</span>
+      </a>
+      <nav class="nav">
+        <a href="../../index.html">Início</a>
+        <a href="../../games.html">Jogos</a>
+        <a class="active" href="../snake/">Snake Neo</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" data-action="toggle-theme">☀︎</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section game-wrap">
+    <section class="panel">
+      <div class="stats">
+        <div class="badge">Pontos: <span id="score">0</span></div>
+        <div class="badge">Recorde: <span id="best">0</span></div>
+        <div class="badge">Velocidade: <span id="speed">1x</span></div>
+      </div>
+      <div class="canvas-box">
+        <canvas id="game" width="640" height="640"></canvas>
+      </div>
+      <div class="controls" style="margin-top:10px">
+        <button class="btn primary" id="btn-start">Iniciar</button>
+        <button class="btn" id="btn-restart">Reiniciar</button>
+      </div>
+    </section>
+    <aside class="panel">
+      <h3>Snake Neo</h3>
+      <p>Clássico atemporal com controles responsivos no teclado.</p>
+      <ul>
+        <li>Setas: mover</li>
+        <li>Barra de espaço: pausar</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Boa sorte!</div>
+  </footer>
+
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/games/snake.js"></script>
+</body>
+</html>
